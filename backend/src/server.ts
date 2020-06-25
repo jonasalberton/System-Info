@@ -1,11 +1,8 @@
 import express from 'express';
+import Routes from './routes';
 
 const app = express();
 
-app.get('/', (req, res) => {
-  return res.json({
-    hello: 'I am allive',
-  });
-});
+app.use(Routes);
 
-app.listen(3000);
+app.listen(3000, () => console.log('Server running at localhost:3000'));
