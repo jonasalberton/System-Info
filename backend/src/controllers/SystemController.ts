@@ -21,4 +21,10 @@ router.get('/', (request, response) => {
    });
 });
 
+router.get('/battery', (request, response) => {
+    SystemInformation.battery().then( (system) => {
+       response.json(system);
+   });
+});
+
 export default router;
