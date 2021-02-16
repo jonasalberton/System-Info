@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "systeminformation": "^4.26.9",
+    "systeminformation": "^5.3.1",
     "typescript": "^3.9.5"
   },
   "devDependencies": {
